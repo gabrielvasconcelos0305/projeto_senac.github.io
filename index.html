@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Projeto 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body style="background-color: lightblue;">
+
+    <div id="top"></div>
+
+    <!-- NavBar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#topo">Slides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulário">Formulário</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel with Tab -->
+    <h2 id="slides" class="mt-4">Slides</h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <ul id="carrossel_tab" class="nav nav-tabs">
+            <li class="nav-item">
+              <button type="button" class="nav-link" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1">Slide 1</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-link" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Slide 2</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-link" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Slide 3</button>
+            </li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/1920/700?random=4" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1920/700?random=5" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1920/700?random=6" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+
+    <!-- Card -->
+    <h2 id="cards" class="mt-4">Cards</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://picsum.photos/700/1100?random=7" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga provident quod qui dicta voluptatem enim. Nulla cumque, esse soluta praesentium dolorum possimus repudiandae saepe quaerat, quia laborum rerum dolores..</p>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card_l">
+                        Extenção 1
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div id="card_l" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Título da extenção 1</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/700/1100?random=7" class="card-img-top" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/700/1100?random=8" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Título do card 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia ducimus veniam omnis earum modi suscipit, ipsam quo quas sapiente quisquam cum aliquam sequi quae animi excepturi. Esse, soluta itaque.</p>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card_2">
+                    Extenção 2
+                </button>
+            </div>
+            <!-- Modal -->
+            <div id="card_2" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Título da extenção 2</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/700/1100?random=8" class="card-img-top" alt="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://picsum.photos/700/1100?random=9" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card 3</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam beatae quis, maxime voluptate dolorum vero hic? Animi asperiores esse ducimus, harum voluptas nesciunt deserunt quam quaerat voluptatem, porro laboriosam!</p>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card_3">
+                        Extenção 3
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div id="card_3" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Título da extenção 3</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://picsum.photos/700/1100?random=9" class="card-img-top" alt="...">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <h2 id="formulário" class="mt-4">Formulário</h2>
+    <form class="col-6 m-auto mt-1" id="formulario">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Lembre-se de mim</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+    </form>
+
+    <!-- Footer -->
+    <div id="footer">
+        <h3>Contatos:</h3>
+        <p>- Contato 1 <br>
+            - Contato 2 <br>
+            - Contato 3
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
